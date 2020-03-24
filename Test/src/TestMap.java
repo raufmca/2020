@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class TestMap {
 	
@@ -15,6 +16,8 @@ public class TestMap {
 		System.out.println("Value at 4 - > " + hmap.get(4));
 		
 		System.out.println("Value at 5 -> " + hmap.get(5));
+		
+	
 	}
 
 }
