@@ -8,7 +8,7 @@ public class Inheritance {
 	
 		Car c1 = new Car("Base Model", 25);
 	
-		System.out.println("Fuelcapacity available -> "+ c1.fuelcapacity);
+		System.out.println("Fuelcapacity available -> "+ Car.fuelcapacity);
 		c1.start();
 		c1.refuel();
 		c1.refuel(30);
@@ -20,6 +20,8 @@ public class Inheritance {
 		hc.refuel();
 		hc.refuel(100);
 		hc.refuel(20, 20);
-		System.out.println("Fuelcapacity available -> "+ hc.fuelcapacity);
+		System.out.println("Fuelcapacity available -> "+ HondaCar.fuelcapacity);
+		
+		
 	}
 }
