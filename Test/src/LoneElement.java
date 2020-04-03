@@ -22,8 +22,7 @@ public class LoneElement {
 		System.out.println("Map details -> "+ map);
 		for( Entry<Integer, Integer> entry : map.entrySet())
 			if( entry.getValue() <= 1)
-				System.out.println("Lone Elent is -> " + entry.getKey());
-				
+				System.out.println("Lone Elent is -> " + entry.getKey());		
 		
 		
 		
