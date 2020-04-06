@@ -2,7 +2,7 @@ package OOPS;
 
 public class Car {
 	String name;
-	static int fuelcapacity;
+	int fuelcapacity;
 	
 	public Car() {
 		System.out.println("Default Car constructor");
