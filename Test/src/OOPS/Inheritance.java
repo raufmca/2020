@@ -23,5 +23,15 @@ public class Inheritance {
 		System.out.println("Fuelcapacity available -> "+ HondaCar.fuelcapacity);
 		
 		
+		System.out.println("------------------------------");
+		
+		Car cc = new HondaCar();
+		
+		cc.refuel(100);
+		cc.refuel();
+		
+		//Overloading o = new Overloading();
+
+		
 	}
 }

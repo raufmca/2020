@@ -20,7 +20,7 @@ public class Car {
 	}
 	
 	public void refuel() {
-		System.out.println("Refueling the "+name);
+		System.out.println("Refueling the ");
 	}
 	
 	public void refuel(int qty) {

@@ -19,5 +19,9 @@ public class HondaCar extends Car{
 		System.out.println("Fuelcapacity is "+fuelcapacity);
 		fuelcapacity += qty;
 	}
+	
+	public void refuel(int q) {
+		System.out.println(" Refuelling honda car -> "+ q);
+	}
 
 }
