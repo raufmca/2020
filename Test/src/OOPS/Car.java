@@ -19,7 +19,7 @@ public class Car {
 		System.out.println(name+" is starting");
 	}
 	
-	public void refuel() {
+	public  void refuel() {
 		System.out.println("Refueling the ");
 	}
 	
