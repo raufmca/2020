@@ -20,5 +20,11 @@ public class Overloading {
 	
 	public static void add(int x, double y) {
 		System.out.println("Inside no return function -> " + (x + y));
-	}
+	} 
+	
+	
+	/*
+	 * public static void add(int x, int y) {
+	 * System.out.println("INside no return integer integer add()"); }
+	 */
 }
