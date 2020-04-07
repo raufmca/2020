@@ -21,5 +21,13 @@ public abstract class TownHospital implements Hospital{
 	}
 
 	
+	public TownHospital() {
+		System.out.println("Inside TownHospital constructor");
+	}
+	
+	 void enquiry() {
+		System.out.println("TownHall Hospital enquiry");
+	}
+	
 
 }

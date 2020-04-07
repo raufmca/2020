@@ -13,5 +13,13 @@ public class CityHospital extends TownHospital{
 		// TODO Auto-generated method stub
 		System.out.println("City Hospital Emergency department");
 	}
+	
+	CityHospital() {
+		System.out.println("Inside City Hospital");
+	}
+	
+	void enquiry() {
+		System.out.println("City Hospital Enquery ");
+	}
 
 }

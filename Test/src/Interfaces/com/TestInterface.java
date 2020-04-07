@@ -39,5 +39,7 @@ public class TestInterface {
 			ch.emergency(); // City Hospital
 			ch.operate(); // CH
 			ch.register(); // TH
+			
+			ch.enquiry();
 }
 }
