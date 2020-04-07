@@ -19,5 +19,9 @@ public class Cat implements Animal{
 		System.out.println("Cat hunts rats");
 		
 	}
+	
+	public void meow() {
+		System.out.println(" Cat meowing");
+	}
 
 }

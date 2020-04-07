@@ -20,4 +20,7 @@ public class Elephent implements Animal{
 		
 	}
 
+	public void run() {
+		System.out.println("Elephant walking");
+	}
 }

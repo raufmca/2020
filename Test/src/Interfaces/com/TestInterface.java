@@ -9,6 +9,7 @@ public class TestInterface {
 			c.hunt();
 			c.typeof();
 			c.foodtype();
+			c.meow();
 			
 			System.out.println("---------------Elepehent objects----------");
 
@@ -16,6 +17,7 @@ public class TestInterface {
 			e.foodtype();
 			e.hunt();
 			e.typeof();
+			e.run();
 			
 			//Animal a = new Animal(); // Not allowed creating object of interface
 			
@@ -24,6 +26,9 @@ public class TestInterface {
 			a1.hunt();
 			a1.foodtype();
 			a1.typeof();
+			
+			System.out.println("---------- Creating reference to the abstract class-------");
+			
 			
 	}
 	
