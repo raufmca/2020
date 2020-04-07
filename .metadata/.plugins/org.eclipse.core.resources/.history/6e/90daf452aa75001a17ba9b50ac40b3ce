@@ -1,0 +1,17 @@
+package OOPS;
+
+public class HondaCar extends Car{
+	
+	public HondaCar() {
+		System.out.println("Inside default HondaCar");
+	}
+	
+	public void gps() {
+		System.out.println("HondaCar GPS");
+	}
+	
+	public void refuel() {
+		System.out.println("refueling ");
+	}
+
+}

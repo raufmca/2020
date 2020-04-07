@@ -1,0 +1,23 @@
+package Interfaces.com;
+
+public class Cat implements Animal{
+
+	@Override
+	public void typeof() {
+		
+		
+	}
+
+	@Override
+	public void foodtype() {
+		
+		
+	}
+
+	@Override
+	public void hunt() {
+		
+		
+	}
+
+}

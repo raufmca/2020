@@ -1,0 +1,18 @@
+package OOPS;
+
+public class Overloading {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Addition of 2 integers -> "+add(10,20));
+		System.out.println("Addition of intger and float -> " +add(100.0,25));
+	}
+
+	public static int add(int a, int b) {
+		return a+b;
+	}
+	
+	public static double add(double c, int z) {
+		return c+z;
+	}
+}

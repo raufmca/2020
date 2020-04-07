@@ -1,0 +1,5 @@
+package Interfaces.com;
+
+public interface Hospital {
+
+}

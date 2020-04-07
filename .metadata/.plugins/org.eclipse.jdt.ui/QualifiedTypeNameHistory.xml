@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.memory.MemoryCheckpoint.Single"/>
+    <fullyQualifiedTypeName name="OOPS.Singleton"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="OOPS.Car"/>
+    <fullyQualifiedTypeName name="OOPS.HondaCar"/>
+    <fullyQualifiedTypeName name="OOPS.Overloading"/>
+    <fullyQualifiedTypeName name="Interfaces.com.Elephent"/>
+    <fullyQualifiedTypeName name="Interfaces.com.Animal"/>
+    <fullyQualifiedTypeName name="interviewQuestions.Overloading1"/>
+    <fullyQualifiedTypeName name="interviewQuestions.Overload"/>
+    <fullyQualifiedTypeName name="compsotions.Person"/>
+</qualifiedTypeNameHistroy>

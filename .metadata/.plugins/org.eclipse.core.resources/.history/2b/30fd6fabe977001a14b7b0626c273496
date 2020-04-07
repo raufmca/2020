@@ -1,0 +1,22 @@
+package Interfaces.com;
+
+public class TestInterface {
+
+	public static void main(String[] args) {
+	
+			Cat c = new Cat();
+			
+			c.hunt();
+			c.typeof();
+			c.foodtype();
+
+			Elephent e = new Elephent();
+			e.foodtype();
+			e.hunt();
+			e.typeof();
+			
+			Animal a = new 
+	}
+	
+
+}

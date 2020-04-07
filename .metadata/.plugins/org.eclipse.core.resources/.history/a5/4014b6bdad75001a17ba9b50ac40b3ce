@@ -1,0 +1,22 @@
+package OOPS;
+
+public class HondaCar extends Car{
+	
+	public HondaCar() {
+		System.out.println("Inside default HondaCar");
+	}
+	
+	public void gps() {
+		System.out.println("HondaCar GPS");
+	}
+	
+	public void refuel() {
+		System.out.println("refueling ");
+	}
+	
+	public void refuel(int qty, int time) {
+		System.out.println("Inside refueling Honda car in "+time+" Seconds");
+		fuelcapacity += qty;
+	}
+
+}
