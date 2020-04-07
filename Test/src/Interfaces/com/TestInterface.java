@@ -29,8 +29,15 @@ public class TestInterface {
 			
 			System.out.println("---------- Creating reference to the abstract class-------");
 			
-			
-	}
+			// TownHospital tp = new TownHospital(); // cannot create object of abstract class
 	
-
+			System.out.println("---- CReating object of class which is extending the abstract class --");
+	
+			CityHospital ch = new CityHospital();
+			
+			ch.bodyScan();  // from TownHospital
+			ch.emergency(); // City Hospital
+			ch.operate(); // CH
+			ch.register(); // TH
+}
 }
