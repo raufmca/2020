@@ -41,5 +41,19 @@ public class TestInterface {
 			ch.register(); // TH
 			
 			ch.enquiry();
+			
+			System.out.println("-------------- Fruits ------------------");
+//			Mango m = new Mango();  // Abstract class objects are not able to create 
+			
+//			MangoFruits mf = new MangoFruits(); // Abstract class extending absyract calls so cant create objects
+			
+			MangoesSeasonal ms = new MangoesSeasonal();
+			
+			ms.aapus(); // from mango
+			ms.colour(); // mango
+			ms.price(); // mango seasonal
+			ms.season(); // mango
+			ms.taste(); // mango fruits
+			
 }
 }
