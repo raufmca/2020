@@ -1,7 +1,9 @@
 package filesandxls;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -29,7 +31,13 @@ public class WriteandReadFiles {
 		
 		// Reading file 
 		
+		FileReader fr = new FileReader(fn);
+		BufferedReader br = new BufferedReader(fr);
+		String line ="";
 		
+		while((line = br.readLine()) != null) {
+			System.out.println(line);
+		}
 		
 
 	}
