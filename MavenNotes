@@ -1,0 +1,10 @@
+Creating projects using command line from Maven
+
+- mvn archetype:generate
+- type the number which prompter
+- propmts for chosing number choose the ltest version from the options
+- asks for groupid which is nothing but the package name
+- asks for artifact id which is nothing but the project name which is displayed in eclips
+- To convert the created project to open in eclipse compatible give command as 
+- Navigate to the project folder --> mvn eclipse:eclipse
+-- The above create .classpath and .project files which are required to open the project in Eclipse  

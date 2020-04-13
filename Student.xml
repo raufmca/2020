@@ -1,0 +1,13 @@
+<StudentData>
+	<Student>
+		<Name>Alhaam</Name>
+		<Age>5</Age>
+		<Score>99</Score>
+	</Student>
+	<Student>
+		<Name>Aqdas</Name>
+		<Age>2</Age>
+		<Score>95</Score>
+	</Student>
+	
+</StudentData>
