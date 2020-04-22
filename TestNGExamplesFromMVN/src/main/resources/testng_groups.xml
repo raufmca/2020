@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="My First" parallel="tests">
+	<listeners>
+		<listener class-name="com.testListeners.CustomeListners" />
+	</listeners>
+	
+	<test name="GroupWise">
+		<groups>
+			<run>
+				<include name = "verify" />
+			</run>
+		</groups>
+		<classes>
+			<class name = "com.testListeners.TestListeners" />
+		</classes>
+	</test>
+</suite>

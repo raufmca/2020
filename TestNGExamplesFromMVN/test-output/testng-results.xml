@@ -1,91 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-13T19:54:53 IST" name="Default suite" finished-at="2020-04-13T19:54:53 IST" duration-ms="52">
+  <suite started-at="2020-04-16T19:47:28 IST" name="My First" finished-at="2020-04-16T19:47:28 IST" duration-ms="58">
     <groups>
+      <group name="verify">
+        <method signature="TestListeners.testCheck()[pri:1, instance:com.testListeners.TestListeners@45b9a632]" name="testCheck" class="com.testListeners.TestListeners"/>
+        <method signature="TestListeners.testVerify()[pri:1, instance:com.testListeners.TestListeners@45b9a632]" name="testVerify" class="com.testListeners.TestListeners"/>
+      </group> <!-- verify -->
     </groups>
-    <test started-at="2020-04-13T19:54:53 IST" name="Default test" finished-at="2020-04-13T19:54:53 IST" duration-ms="52">
-      <class name="com.examples.LoginTest">
-        <test-method signature="testDifferent(java.lang.String, int, char, int)[pri:0, instance:com.examples.LoginTest@3ee0fea4]" started-at="2020-04-13T19:54:53 IST" name="testDifferent" data-provider="getData" finished-at="2020-04-13T19:54:53 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Alhaam]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[F]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[345069]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2020-04-16T19:47:28 IST" name="GroupWise" finished-at="2020-04-16T19:47:28 IST" duration-ms="58">
+      <class name="com.testListeners.TestListeners">
+        <test-method signature="testCheck()[pri:1, instance:com.testListeners.TestListeners@45b9a632]" started-at="2020-04-16T19:47:28 IST" name="testCheck" finished-at="2020-04-16T19:47:28 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDifferent -->
-        <test-method signature="testDifferent(java.lang.String, int, char, int)[pri:0, instance:com.examples.LoginTest@3ee0fea4]" started-at="2020-04-13T19:54:53 IST" name="testDifferent" data-provider="getData" finished-at="2020-04-13T19:54:53 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Aqdas]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[F]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[3069]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testCheck -->
+        <test-method signature="testVerify()[pri:1, instance:com.testListeners.TestListeners@45b9a632]" started-at="2020-04-16T19:47:28 IST" name="testVerify" finished-at="2020-04-16T19:47:28 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Aqdas] but found [Alhaam]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Aqdas] but found [Alhaam]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.testListeners.TestListeners.testVerify(TestListeners.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDifferent -->
-        <test-method signature="testDifferent(java.lang.String, int, char, int)[pri:0, instance:com.examples.LoginTest@3ee0fea4]" started-at="2020-04-13T19:54:53 IST" name="testDifferent" data-provider="getData" finished-at="2020-04-13T19:54:53 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rounk]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[M]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[35069]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDifferent -->
-      </class> <!-- com.examples.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testVerify -->
+      </class> <!-- com.testListeners.TestListeners -->
+    </test> <!-- GroupWise -->
+  </suite> <!-- My First -->
 </testng-results>

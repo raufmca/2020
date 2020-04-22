@@ -8,13 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">52</td><td></td><td></td></tr>
+<tr><th colspan="7">My First</th></tr>
+<tr><td><a href="#t0">GroupWise</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">58</td><td>verify</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.examples.LoginTest</td><td><a href="#m0">testDifferent</a></td><td rowspan="3">1586787893101</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m1">testDifferent</a></td></tr><tr class="passedeven"><td><a href="#m2">testDifferent</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My First</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GroupWise &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testListeners.TestListeners</td><td><a href="#m0">testVerify</a></td><td rowspan="1">1587046648199</td><td rowspan="1">4</td></tr><tr><th colspan="4">GroupWise &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.testListeners.TestListeners</td><td><a href="#m1">testCheck</a></td><td rowspan="1">1587046648183</td><td rowspan="1">10</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.examples.LoginTest#testDifferent</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Rounk</td><td>2</td><td>M</td><td>35069</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.examples.LoginTest#testDifferent</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Aqdas</td><td>1</td><td>F</td><td>3069</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.examples.LoginTest#testDifferent</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>Alhaam</td><td>5</td><td>F</td><td>345069</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>GroupWise</h2><h3 id="m0">com.testListeners.TestListeners#testVerify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Aqdas] but found [Alhaam]
+	at com.testListeners.TestListeners.testVerify(TestListeners.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testListeners.TestListeners#testCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

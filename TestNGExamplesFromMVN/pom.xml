@@ -12,6 +12,79 @@
 	    <version>7.0.0</version>
 	    <scope>test</scope>
 	</dependency>
+	
+	<dependency>
+	  <groupId>org.apache.maven.plugins</groupId>
+	  <artifactId>maven-compiler-plugin</artifactId>
+	  <version>3.8.1</version>
+	  <type>maven-plugin</type>
+	</dependency>
+	
+	<dependency>
+  	<groupId>org.apache.maven.plugins</groupId>
+  	<artifactId>maven-surefire-report-plugin</artifactId>
+  	<version>3.0.0-M4</version>
+  	<type>maven-plugin</type>
+</dependency>
+
 </dependencies>
+
+<build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M3</version>
+          <configuration>
+          	<suiteXmlFiles>
+          		<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+          	</suiteXmlFiles>
+          </configuration>
+        </plugin>
+        
+        <plugin>
+         <groupId>org.codehaus.mojo</groupId>
+    	 <artifactId>exec-maven-plugin</artifactId>
+    	 <version>1.6.0</version>
+    	 
+    	    <configuration>
+            	<mainClass>com.TestListeners</mainClass>
+        	</configuration>
+        </plugin>
+      
+      </plugins>
+    </pluginManagement>
+  </build>
+  
+  <reporting>
+	  	<plugins>
+	  	  <plugin>
+            <groupId>org.reportyng</groupId>
+            <artifactId>reporty-ng</artifactId>
+            <version>1.2</version>
+
+            <configuration>
+                <!-- Output directory for the testng xslt report -->
+                <outputDir>/target/testng-xslt-report</outputDir>
+                    <sortTestCaseLinks>true</sortTestCaseLinks>
+                    <testDetailsFilter>FAIL,SKIP,PASS,CONF,BY_CLASS</testDetailsFilter>
+                    <showRuntimeTotals>true</showRuntimeTotals>
+            </configuration>
+           </plugin> 
+	  	</plugins>
+  </reporting>
+  
+   <pluginRepositories>
+        <pluginRepository>
+          <id>apache.snapshots</id>
+          <name>Maven Plugin Snapshots</name>
+          <url>https://repository.apache.org/snapshots/</url>
+        </pluginRepository>
+      </pluginRepositories>
+  
+  
   
 </project>

@@ -27,6 +27,7 @@ public class TestInterface {
 			a1.foodtype();
 			a1.typeof();
 			
+			
 			System.out.println("---------- Creating reference to the abstract class-------");
 			
 			// TownHospital tp = new TownHospital(); // cannot create object of abstract class
@@ -55,5 +56,11 @@ public class TestInterface {
 			ms.season(); // mango
 			ms.taste(); // mango fruits
 			
+			System.out.println("apple".compareTo("ban"));
+			//int a = 123451234512345;
+			//System.out.println("------- > " + a);
+			
+			
+				
 }
 }

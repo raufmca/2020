@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="My First" parallel="tests">
+<listeners>
+	<listener class-name="com.testListeners.CustomeListners" />
+</listeners>
+
+	<!-- test name="LoginTest" allow-return-values="true">
+		<classes>
+		<class name="com.examples.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Application" allow-return-values="true">
+		<classes>
+		<class name="com.examples.Applications" />
+		</classes>
+	</test>
+	
+	<test name="Registration" allow-return-values="true">
+		<classes>
+		<class name="com.examples.Registration" />
+		</classes>
+	</test -->
+	<test name="Listners" allow-return-values="true">
+		<classes>
+			<class name="com.testListeners.TestListeners" />
+		</classes>
+	
+	</test>
+	
+	<test name="Test Login Listenrs" allow-return-values="true">
+		<classes>
+			<class name="com.testListeners.Login" />
+		</classes>
+	</test>
+</suite>
